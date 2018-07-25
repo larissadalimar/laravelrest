@@ -73,7 +73,7 @@ class ServicoController extends Controller
     public function destroy($id)
     {
         $servico = Servico::find($id);
-        $servico = delete();
+        $servico->delete();
         return 'Produto deletado com sucesso';
     }
 
